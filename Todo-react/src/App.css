@@ -1,0 +1,63 @@
+:root {
+  width: 100%;
+  height: 100%;
+  margin: 0 ;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(34, 31, 31);
+}
+.Adding-Form{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.Adding-Form input{
+  width: 50%;
+  height: 10%;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  border-radius: 5px;
+  border: 1px solid rgb(34, 31, 31);
+  outline: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+.btns{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  gap: 1rem;
+  
+}
+button{
+  width: 10%;
+  height: 10%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(34, 31, 31);
+  background-color: white;
+}
+.btns .add{
+  background-color: hsl(125, 88%, 50%);
+}
+.btns .add:hover{
+  background-color: hsl(125, 88%, 45%);
+}
+.btns .clear{
+  background-color: hsl(185, 97%, 50%);
+}
+.btns .clear:hover{
+  background-color: hsl(185, 97%,  45%);
+}
+.list{
+  
+}
