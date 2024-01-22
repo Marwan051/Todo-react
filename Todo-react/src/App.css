@@ -1,20 +1,22 @@
 :root {
   width: 100%;
   height: 100%;
-  margin: 0 ;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   text-align: center;
   background-color: rgb(34, 31, 31);
 }
-.Adding-Form{
+
+.Adding-Form {
   width: 100%;
   height: 30%;
   display: flex;
   flex-direction: column;
 }
-.Adding-Form input{
+
+.Adding-Form input {
   width: 50%;
   height: 10%;
   margin: 0 auto;
@@ -27,37 +29,128 @@
   font-size: 20px;
 }
 
-.btns{
+.btns {
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
-  
 }
-button{
-  width: 10%;
-  height: 10%;
+
+button {
+  width: fit-content;
+  height: fit-content;
+  padding: 0.2rem;
   border-radius: 5px;
   border: none;
   outline: none;
-  font-size: 20px;
+  font-size: larger;
   cursor: pointer;
   color: rgb(34, 31, 31);
   background-color: white;
+  transition: all 0.2s ease-in-out;
 }
-.btns .add{
+
+.btns .add {
   background-color: hsl(125, 88%, 50%);
 }
-.btns .add:hover{
-  background-color: hsl(125, 88%, 45%);
+
+.btns .add:hover {
+  background-color: hsl(125, 88%, 40%);
 }
-.btns .clear{
+
+.btns .clear {
   background-color: hsl(185, 97%, 50%);
 }
-.btns .clear:hover{
-  background-color: hsl(185, 97%,  45%);
+
+.btns .clear:hover {
+  background-color: hsl(185, 97%, 40%);
 }
-.list{
-  
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+  background-color: #333333;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 1rem;
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.list-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #444444;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.element-btns {
+  width: max-content;
+  display: flex;
+  gap: 1rem;
+}
+
+.edit {
+  background-color: hsl(214, 83%, 49%);
+}
+
+.delete {
+  background-color: hsl(0, 100%, 50%);
+}
+
+.edit:hover {
+  background-color: hsl(214, 83%, 40%);
+}
+
+.delete:hover {
+  background-color: hsl(0, 100%, 40%);
+}
+
+input[type="text"] {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.dialog-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  color: #ffffff;
+  gap: 1rem;
+}
+
+.dialog-input {
+  font-size: larger;
+}
+
+.form-btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.form-btns button {
+  width: fit-content;
+  height: fit-content;
+}
+
+.form-btns .edit {
+  background-color: #76d275;
+  color: white;
+}
+
+.form-btns .clear {
+  background-color: #ff7961;
+  color: white;
 }

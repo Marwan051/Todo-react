@@ -9,6 +9,7 @@ const AddingForm = ({ setInput, inputRef }: tableprops) => {
     event.preventDefault();
     setInput(inputRef.current!.value);
     inputRef.current!.value = "";
+    inputRef.current!.focus();
   }
 
   function clearField(event: MouseEvent<HTMLButtonElement>): void {

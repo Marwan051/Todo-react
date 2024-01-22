@@ -4,11 +4,11 @@ type listProps = {
 };
 const List = ({ inputList }: listProps) => {
   return (
-    <div className="List">
+    <ul className="list">
       {inputList.map((element, index) => {
         return <ListElement key={index} element={element} index={index} />;
       })}
-    </div>
+    </ul>
   );
 };
 
