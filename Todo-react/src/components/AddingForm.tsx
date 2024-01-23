@@ -1,8 +1,8 @@
 import { FormEvent, MouseEvent, RefObject } from "react";
-type tableprops = {
+interface tableprops {
   setInput: (input: string) => void;
   inputRef: RefObject<HTMLInputElement>;
-};
+}
 
 const AddingForm = ({ setInput, inputRef }: tableprops) => {
   function handleSubmit(event: FormEvent<HTMLFormElement>): void {

@@ -1,14 +1,14 @@
 import { createContext } from "react";
 
-type DeleteElementContextType = {
+interface DeleteElementContext  {
     deleteElement: (index: number) => void;
-  };
+  }
   
-  type EditElement = {
+  interface EditElement  {
     editElement: (item: string,index:number) => void;
-  };
+  }
   const EditElementContext = createContext<EditElement | undefined>(undefined!);
-  const delContext = createContext<DeleteElementContextType | undefined>(
+  const delContext = createContext<DeleteElementContext | undefined>(
     undefined!
 );
 export { EditElementContext, delContext };

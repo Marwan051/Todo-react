@@ -1,7 +1,7 @@
 import ListElement from "./ListElement";
-type listProps = {
+interface listProps {
   inputList: string[];
-};
+}
 const List = ({ inputList }: listProps) => {
   return (
     <ul className="list">

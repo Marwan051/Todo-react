@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { delContext, EditElementContext } from "./contexts";
-type elementProb = {
+interface elementProb {
   element: string;
   index: number;
-};
+}
 const ListElement = ({ element, index }: elementProb) => {
   const deleteContext = useContext(delContext);
   const { deleteElement } = deleteContext!;
